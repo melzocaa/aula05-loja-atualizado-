@@ -6,7 +6,8 @@ let categorias = [
 ];
 
 let produtos = [
-    { categoriaId:1,
+    { 
+      categoriaId:1,
       nome: "Temaki Completo",
       descricao: "Temaki com salmão, atum, kani, cream cheese e cebola crispy", 
       preco: 35.50,

@@ -2,12 +2,12 @@ const errorHandler = (err, req, res, next) => {
     console.error(`Erro detectado: ${err.message}`);
     res.status(500).json({
         sucesso: false,
-        mensagem: "Ocorreu um error interno no servidor.",
-        detalhe:err.mesage
+        mensagem: "ocorreu um erro interno no servidor.",
+        detalhe:err.message
     });
 };
 
-module.exports = errorHandlerMiddleware;
+module.exports = errorHandler;
 
 // Códigos de status HTTP mais comuns:
 // 200 -> OK (tudo certo)
